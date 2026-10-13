@@ -7,6 +7,11 @@ function App() {
       {/* Website Name */}
       <h1 className="website-name">SM PREMIUM MV</h1>
 
+      <form className="search-tab">
+          <input type="search"placeholder="Search movies..."/>
+          <button type="submit">Search</button>
+      </form>
+
       {/* Movies */}
       <h2>WHAT'S ON TODAY?</h2>
 
@@ -19,19 +24,19 @@ function App() {
 
   <section className="movies">
 
-    <div className="movie blue">
+    <article className="movie blue">
       <img src="src/assets/F1.jpeg" />
       <h1>18:00</h1>
       <p>F1 THE MOVIE</p>
       <small>Premier on October 10 2026</small>
-    </div>
+    </article>
 
-    <div className="movie orange">
-      <img src="src/assets/Kung fu.jpeg" />
+    <article className="movie orange">
+      <img src="src/assets/kung fu.jpeg" />
       <h1>20:00</h1>
       <p>KUNG FU PANDA</p>
       <small>Premier on January 2028</small>
-    </div>
+    </article>
 
     <div className="movie green">
       <img src="src/assets/Tangled.jpeg" />
@@ -80,6 +85,22 @@ function App() {
         </div>
 
       </section>
+
+      
+      <footer className="site-footer">
+        <h2>SM PREMIUM MV</h2>
+        <p>Your movie experience starts here.</p>
+
+        <div className="footer-links">
+            <a href="#movies">Movie Schedule</a>
+            <a href="#description">Ticket Information</a>
+            <a href="mailto:contact@example.com">Contact Us</a>
+        </div>
+
+         <div className="footer-bottom">
+            <p>© 2026 SM PREMIUM MV. All rights reserved.</p>
+        </div>
+</footer>
 
     </main>
   );
